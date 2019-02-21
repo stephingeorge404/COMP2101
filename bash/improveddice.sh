@@ -13,18 +13,18 @@
 #  display a summary of what was rolled, and what the result was
 
 #define variables for the number of sides, and the formula bias
-sides=6
+side=6
 bias=1
 
 
 # Tell the user we have started processing
 echo "Rolling 2 sided dice..."
 # roll the dice and save the results
-die1=$(( RANDOM % $sides + $bias))
-die2=$(( RANDOM % $sides + $bias ))
+dice1=$(( RANDOM % $side + $bias))
+dice2=$(( RANDOM % $side + $bias ))
 # sum up the rolls
-sum=$(( die1 + die2 ))
+sum=$(( dice1 + dice2 ))
 #the average
 avg=$(($sum / 2))
 # display the results
-echo "Rolled $die1, $die2 for a $sum (averaging $avg)"
+echo "Rolled $dice1, $dice2 for a $sum (and an averaging $avg)"

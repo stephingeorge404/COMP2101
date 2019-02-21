@@ -9,7 +9,7 @@
 #   - first divided by second gives X with a remainder of Y
 # Improve this script by calculating and displaying the first number raised to the power of the second number
 
-echo "Enter two integers: "
+echo "Performing arithmetic operations between two integers"
 
 read -p firstnum: firstnum
 read -p secondnum: secondnum

@@ -4,7 +4,7 @@
 #   since it is not created or modified in this script
 
 
-MYVAR="some data"
+MYVAR="the power of the crystal skull"
 
 [ -v MYVAR ] && echo "The variable MYVAR exists"
 [ -v MYVAR ] || echo "The variable MYVAR does not exist"
