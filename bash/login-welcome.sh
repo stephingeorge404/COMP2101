@@ -15,7 +15,7 @@
 title="Overlord"
 myname="stephingeorge"
 hostname=$(hostname)
-NOW=$(date +"%h-%M-%P")
+NOW=$(date +"%c")
 day=$(date +"%A")
 
 ###############
