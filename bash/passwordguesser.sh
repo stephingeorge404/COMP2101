@@ -7,6 +7,26 @@
 #           *** Do not use the exit command
 
 myString="TestString"
-referenceString="password"
+referenceString="Allhailme"
 
-[ $myString = $referenceString ] && echo "You guessed the password!" || echo "The password eludes you..."
+#[ $myString = $referenceString ] && echo "the Password you guessed is right.!" || echo "The password is wrong dude..."
+
+#read -p "Please enter the guessed password:" myString
+#if [ $myString = $referenceString ]
+#then
+  #echo "Your guess is incorrect"
+#else
+  #echo "The password eludes you kiddo"
+#fi
+
+for try in {1..3}
+do
+  read -p "Try ($try): Enter  the guessed password :" myString
+  if [ $myString = $referenceString ]
+  then
+    echo "Skadoosh!! You guessed it right. Attaboy!!"
+    break
+  else
+    echo "The password eludes you again, you fool..."
+  fi
+done
